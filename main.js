@@ -31,13 +31,12 @@ function buttonClick3() {
         "Логин", ''
         )
     ;
-    let password = prompt(
-        "Пароль", ''
-        )
-    ;
 
     if ( login === 'Админ') {
-        prompt ('Пароль', '');
+        let password = prompt (
+            "Пароль", ''
+            )
+        ;
         if (password  === 'Черный Властелин') {
             alert('Доброе пожаловать') ;
         }
