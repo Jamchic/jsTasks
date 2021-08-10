@@ -25,21 +25,33 @@ function buttonClick2() {
     else {
         alert(0);
     }
-    console.log(number);
 }
 function buttonClick3() {
     let login = prompt(
         "Логин", ''
         )
     ;
+    let password = prompt(
+        "Пароль", ''
+        )
+    ;
 
     if ( login === 'Админ') {
         prompt ('Пароль', '');
-    }
-    else if ( login !== 'Админ'){
-        alert('Я вас не знаю')
+        if (password  === 'Черный Властелин') {
+            alert('Доброе пожаловать') ;
+        }
+        else if ( password == null ) {
+            alert('Вход отменен');
+        }
+        else {
+            alert('Пароль неверен');
+        }
     }
     else if ( login == null ) {
-        alert('Вход отменен')
+        alert('Вход отменен');
+    }
+    else {
+        alert('Я вас не знаю');
     }
 }
