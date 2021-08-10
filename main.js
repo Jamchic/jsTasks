@@ -11,23 +11,21 @@ function buttonClick() {
     }
 }
 function buttonClick2() {
-    let number$ = prompt(
+    let number = prompt(
         "Введите число", ''
         )
     ;
 
-    if (number$ > 0) {
+    if (number > 0) {
         alert(1);
     }
-    else if (number$ < 0) {
+    else if (number < 0) {
         alert(-1);
     }
-    else if (number$ === 0) {
+    else {
         alert(0);
     }
-    else {
-        alert('Введите число')
-    }
+    console.log(number);
 }
 function buttonClick3() {
     let login = prompt(
